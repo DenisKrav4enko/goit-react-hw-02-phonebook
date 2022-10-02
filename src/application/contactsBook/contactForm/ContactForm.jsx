@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Wrapper,
   AddContactsForm,
@@ -62,5 +63,10 @@ const ContactForm = props => {
     </Wrapper>
   )
 }
+
+ContactForm.propTypes = {
+  contacts: PropTypes.array,
+  setContacts: PropTypes.func,
+};
 
 export default ContactForm;

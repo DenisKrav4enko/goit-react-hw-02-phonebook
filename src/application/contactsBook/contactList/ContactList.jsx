@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Wrapper,
   ContactsList,
   DeleteContact,
   ContactsListItem,
 } from './StyledComponents';
+import ContactsBook from "../ContactsBook";
 
 const ContactList = props => {
   const {
@@ -47,5 +49,11 @@ const ContactList = props => {
     </Wrapper>
   )
 }
+
+ContactList.propTypes = {
+  filter: PropTypes.string,
+  contacts: PropTypes.array,
+  setContacts: PropTypes.func,
+};
 
 export default ContactList;

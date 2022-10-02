@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   WrapperFilter,
   Wrapper,
@@ -23,5 +24,10 @@ const Filter = props => {
     </Wrapper>
   )
 }
+
+Filter.propTypes = {
+    filter: PropTypes.string,
+    setFilter: PropTypes.func,
+};
 
 export default Filter;
