@@ -19,7 +19,6 @@ export const App = () => {
         setFilter={setFilter}
         setContacts={setContacts}
       />
-      LOL
     </Wrapper>
   );
 };
